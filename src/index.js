@@ -5,7 +5,7 @@ module.exports = function towelSort(matrix) {
   if (!matrix) {
     return [];
   }
-  for (let i = 0; i < matrix.length; i++) {
+  for (let i = 1; i < matrix.length; i+=2) {
     if (i % 2) {
       matrix[i].reverse();
     }
